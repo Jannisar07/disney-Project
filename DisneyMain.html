@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney|India</title>
+    <!-- link for icon below  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+ .Disney{
+
+    /* height: 50px; */
+    width: 10%;
+
+    padding-left: 30px;
+    padding-top: 10px ;
+}
+.Disney img{
+    width: 100%;
+    height: inherit;
+}
+ .ShopText{
+    display: flex;
+    align-items: center;
+    padding-top: 10px ;
+
+    
+}
+.ShopText a{
+ padding-left: 40px;
+ text-decoration-line: none;
+ color: black;
+} 
+.banner{
+    width: 100%;
+    margin-top: 10px;
+}
+.banner img{
+    width: 100%;
+    height: inherit;
+}
+.banner:hover{
+    transition: all 0.1s linear;
+    transform: scale(1.03);
+}
+.FourPhotoMain{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.Photo1{
+    width: 24%;
+    height: 450px;
+}
+.Photo1 img{
+    width: 100%;
+    height: inherit;
+}
+.Photo1:hover{
+    transition: all 0.1s linear;
+    transform: scale(1.03);
+    
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(238 238 238);
+    height: auto;
+    margin-top: 20px;
+}
+.DisneyImage{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.left{
+    width: 49%;
+    /* height: 360px; */
+    
+}
+.left img{
+    width: 100%;
+    height: inherit;
+    margin-bottom: 20px;
+}
+.left img:hover{
+    transition: all 0.1s linear;
+    transform: scale(1.03);
+}
+.left span{
+    font-size: larger;
+
+}
+.right{
+    width: 49%;
+    /* height: 450px; */
+}
+.right video{
+    height: inherit;
+    width: 100%;
+}
+.right video:hover{
+    transition: all 0.1s linear;
+    transform: scale(1.03);
+}
+.right h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.Expore{
+    width: 100%;
+    margin-top: 90px;
+    margin-bottom: 30px;
+
+}
+.Expore span{
+    font-size: xx-large;
+
+}
+.ThreePhotoMain{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ph1{
+    width: 32%;
+    /* display: flex;
+    flex-direction: column; */
+    
+
+}
+.ph1 span{
+font-size: x-large;
+
+}
+.ph1 h2{
+font-size: larger;
+padding-top: 10px;
+}
+.ph1 img{
+    width: 100%;
+    height: inherit;
+    padding-bottom: 20px;
+}
+.ph1 img:hover{
+    transition: all 0.1s linear;
+    transform: scale(1.03);
+
+}
+.MoreFromDisney{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.MoreFromDisney span{
+    font-size: xx-large;
+}
+.Main2Photos{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.PhLeft{
+    width: 49%;
+    padding-bottom: 50px;
+}
+.PhLeft img{
+    width: 100%;
+    height: inherit;
+    padding-bottom: 40px;
+}
+.PhLeft img:hover{
+    transition: all 0.1s linear;
+    transform: scale(1.03);
+}
+.PhLeft span {
+font-size: x-large;
+
+}
+.PhLeft p{
+padding-top: 10px ;
+padding-bottom: 10px;
+}
+section{
+    background-color:rgb(235, 232, 232);
+    height: auto;
+    width: 100%;
+} 
+.footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-left: 30px;
+
+}
+.leftFooter{
+    width: 49%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+}
+.image{
+    width: 20%;
+
+}
+.image img{
+    height: inherit;
+    width: 100%;
+
+}
+.text{
+    padding-left: 30px;
+    
+}
+.text span{
+    padding-left: 30px;
+
+    align-items: center;
+
+    padding-top: 10px;
+}
+.rightFooter{
+    width: 49%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+    
+}
+.rightFooter i {
+    padding-left: 30px;
+    font-size: 30px;
+}
+@media screen and (max-width:780px) {
+    .FourPhotoMain .Photo1 {
+        width: 49%;
+        margin: 10px 0px;
+    }
+    .DisneyImage .left{
+        width: 100%;
+    }
+    .DisneyImage .right video{
+        margin: 10px 0px;
+    }
+    .DisneyImage .right{
+        width: 100%;
+    }
+    
+    
+}
+@media screen and (max-width:680px) {
+    .ThreePhotoMain .ph1{
+        width: 100%;
+    }
+
+    
+}
+
+</style>
+<link rel="Icon" href="data:image/png;base64,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" type="image/png">
+</head>
+<body>
+    <div class="header">
+        <div class="Disney">
+           <a href="DisneyMain.html" target="_self"> <img src="https://static-mh.content.disney.io/matterhorn/assets/logos/disney_logo_dark@2x-55d58747777d.png" alt="Logo">
+           </a>
+        </div>
+        <div class="ShopText">
+          <a href="shop.html" target="_self">SHOP</a>
+          <a href="perks.html" target="_self">PERKS</a>
+          <a href="" target="_self">WHATS NEW</a>
+
+s
+        </div>
+    </div>
+    <div class="banner">
+        <img src="https://lumiere-a.akamaihd.net/v1/images/retina--2000-x-835_80c07de4.jpeg?region=0,0,2000,835&width=1536" alt="banner">
+        
+    </div>
+    <div class="FourPhotoMain">
+        <div class="Photo1">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/disney-x-ginger-_-500-x-575_48785ba1.jpeg?region=0,0,500,575&width=480" alt="Photo1">
+        </div>
+        <div class="Photo1">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/800_x_600_avengers_ec604d30.jpeg?region=0,0,600,800&width=480" alt="Photo1">
+        </div>
+        <div class="Photo1">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/final_blue_banner_4_copy_-_01_a50b5e9d.jpeg?region=0,0,1000,1150&width=480" alt="Photo1">
+        </div>
+        <div class="Photo1">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/disney_banner_mobile_da6fee66.jpeg?region=0,0,2083,2396&width=480" alt="Photo1">
+        </div>
+    </div>
+    <!-- Add section here after code  -->
+    <section>
+    <!-- container is the main div for whole background color  -->
+    <div class="container">
+        <div class="featured">
+            <h2>Featured ads</h2>
+        </div>
+        <!-- div for 1 photo and 1 Trailer -->
+        <div class="DisneyImage">
+            <div class="left">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/900x540_dit_2bbf385b.jpeg?region=0,0,960,540" alt="Disney Image">
+                <span> &nbsp; &nbsp;  &nbsp;Disney Imagine That | Disney Channel</span>
+            </div>
+            <div class="right">
+                 <video controls poster="https://lumiere-a.akamaihd.net/v1/images/launch-trailer-yt_thumb_f96a7d15.jpeg?region=0,0,1280,720&width=960"> 
+                    <source src="videoplayback.mp4" type="video/mp4" >
+                </video>
+                <h2>  Marvels's SPIDER-MAN</h2> 
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit architecto esse iusto sit voluptates illum sunt suscipit laboriosam molestias quos. Get the game now:<a href="https://www.amazon.in/" target="_blank">https://www.amazon.in/</a>
+            </p>  
+            <span>#Be Greater # Be yourself #MilesMorels</span>
+            
+            </div>
+        </div>
+        <div class="Expore">
+           <span> Explore Disney Holidays</span>
+        </div>
+        <!-- below div is main div for 3 photos -->
+        <div class="ThreePhotoMain">
+            <div class="ph1">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/eu_dis-prs_season-of-the-force_poh_r_3aad400f.jpeg?region=0,0,600,690" alt="ph1">
+           <center>     <Span>Legend of the force</Span>
+            <h2>Discover now at Disneyland Paris</h2>
+        </center>                
+
+        </div>
+            <div class="ph1">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/eu_parks_q2-update_po_v8_r_8570fddb.jpeg?region=0,0,600,690" alt="ph2">
+                <center>     <Span> 14 DAy Ticket at 7 Day Price </Span>
+                    <h2>Book With Walt Disney World </h2>
+                </center> 
+            </div>
+            <div class="ph1">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/eu_dcr_always_on_sq_po_v3_r_1b065c85.jpeg?region=0,0,500,575" alt="ph3">
+                <center>     <Span>Find Your Perfect Holiday</Span>
+                    <h2>Book With Disney Cruize Line </h2>
+                </center> 
+            </div>
+        </div>
+        <div class="MoreFromDisney">
+            <span>More From Disney</span>
+        </div>
+        <div class="Main2Photos">
+            <div class="PhLeft">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/retina_-_1095_x_617_cfd1e705.png?region=0,0,1095,617&width=960" alt="Photo 1 Left">
+                <span>Disney Junior Birthday Book</span>
+                <p>Make your kids birthday even more special by creating your own personalized birthday video for your child.</p>
+                <h4>Disney Junior</h4> 
+            </div>
+            <div class="PhLeft">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/eu_mickey90_promo2_c169_r_b0eb57bc.jpeg?region=0,0,1095,617&width=960" alt="Photo 1 Left">
+                <span>Happy Anniversary Mickey</span>
+                <p>It all started with a mouse. We're celebrating 90 years of the True Original</p>
+                <h4>Disney </h4> 
+            </div>
+        </div>
+    </div>
+</section>
+<div class="footer">
+    <div class="leftFooter">
+       <div class="image">
+        <img src="https://static-mh.content.disney.io/matterhorn/assets/logos/disney_logo_dark@2x-55d58747777d.png" alt="loco">
+        </div>
+        <div class="text">
+         <span>SHOP</span>
+        <span>PERKS</span>
+        <span>WHATS NEW </span>
+
+        </div>
+    </div>
+      <div class="rightFooter">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+
+      </div>
+</div>
+</body>
+</html>

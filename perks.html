@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin: 10px;
+        }
+        .logo a{
+            width: 50px;
+            height: 60px;
+            margin-right: 20px;
+
+        }
+        .logo img{
+           width: 100%; 
+           height: inherit;
+        }
+        .shop{
+            margin-left: 40px;
+           
+        }
+        .shop a{
+            text-decoration-line: none;
+            color: black;
+        }
+        .banner{
+            text-align: right;
+            width: 100%;
+            overflow: hidden;
+            /* height: 600px; */
+           
+            position: relative;
+            overflow: hidden;
+
+        }
+        .banner .image{
+            width: 100%;
+        }
+        .banner:hover{
+            transition: all 0.1s linear;
+            transform: scale(1.02);
+        }
+        .banner .image img{
+            height: inherit;
+        }
+       .banner .text{
+        color: white;
+        position: absolute;
+        bottom: 0;
+        right: 2%;
+        font-size: larger;
+       }
+       .panel{
+        width: 100%;
+        /* height: 700px; */
+        display: flex;
+       }
+       .left{
+        width: 50%;
+        /* height: 700px; */
+        position: relative;
+        overflow: hidden;
+        
+       }
+    
+       .left img{
+         width: 100%;
+        height: inherit;
+        
+       }    
+       .left img:hover{
+        transition: all 0.1s linear;
+        transform: scale(1.03);
+       }
+
+       .left .cont{
+       text-align: center;
+       color: white;
+       width: 100%;
+       position: absolute;
+       left:0;
+       bottom: 0;
+       /* bottom: 20px; */
+       height: fit-content;
+       /* left: 30px; */
+       /* background-color: ; */
+       background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+
+       }
+       .right{
+        width: 50%;
+        /* height: 700px; */
+
+        display: flex;
+        flex-direction: column;
+
+       }
+       .upper{
+        width: 100%;
+        /* height: 350px; */
+        position: relative;
+        overflow: hidden;
+
+       }
+       .upper img{
+        
+        height: inherit;
+       }
+       .upper img:hover{
+        transition: all 0.1s linear;
+        transform: scale(1.03);
+       }
+       .upper div{
+        position: absolute;
+        top: 30%;
+        left: 50px;
+        color: white;
+       }
+       .lower{
+        /* height: 350px; */
+
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+
+       }
+       .lower img{
+        height: inherit;
+       }
+       .lower img:hover{
+        transition: all 0.1s linear;
+    transform: scale(1.03);
+       }
+       .lower .div{
+        position: absolute;
+        top: 60px;
+        left: 90px;
+        color: white;
+       }
+    
+       .mainimages{
+        width: 100%;
+        display: flex;
+       }
+       .imgleft{
+        width: 50%;
+        height: 600px;
+        display: flex;
+
+       }
+       .img1{
+        width: 20%;
+    
+    
+        
+       }
+       .img1 img{
+        height: inherit;
+       }
+       .img2{
+        width: 20%;
+        
+       }
+       .img2 img{
+        height: inherit;
+       }
+       .imgright{
+        width: 50%;
+    
+        height: 600px;
+
+       }
+       section{
+        background-color:rgb(235, 232, 232);
+        height: 700px;
+        width: 100%;
+       }
+       .container{
+        width: 85%;
+        margin: 0% 7%;
+
+
+       }
+       .container .div{
+        padding-top: 20px;
+        padding-bottom: 20px;
+       }
+       
+       .moreMain{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+       }
+       .moreLeft{
+        display: flex;
+        justify-content: space-between;
+        width: 49%;
+
+       }
+       .image1{
+        width: 48%;
+        height: 400px;
+        text-align: center;
+
+        
+
+       }
+       .image1 img{
+        height: inherit;
+        width: 100%;
+       }
+       
+       .image2{
+        width: 48%;
+        height: 400px;
+        text-align: center;
+
+
+       }
+       .image2 img{
+        height: inherit;
+        width: 100%;
+       }
+       .moreRight{
+        width: 49%;
+        height: 400px;
+        text-align: center;
+
+
+        
+       }
+       .moreRight img{
+        height: inherit;
+        width: 100%;
+       }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo"> <a href="DisneyMain.html"> <img src="https://static-mh.content.disney.io/matterhorn/assets/logos/disney_logo_dark@2x-55d58747777d.png" alt="" > </a> </div> <!-- header ends here  -->
+         
+        <div class="shop">
+            <a href="shop.html">SHOP</a>
+        </div> <!-- shop ends here  -->
+        
+        <div class="shop">
+            <a href="perks.html">PERKS</a>
+        </div> <!-- shop ends here  -->
+       
+        <div class="shop">
+            <a href="">WHATS  NEW</a>
+        </div> <!-- shop ends here  -->
+     
+    </div> <!-- header ends here  -->
+
+    <div class="banner">
+        <div class="image"><img src="https://lumiere-a.akamaihd.net/v1/images/in_dis-cal_cars-land_hero_r_a932b7af.jpeg?region=0,0,1920,802&width=1536" alt=""></div>
+        <div class="text"> <h1>Disneyland Resort <br> in California</h1>
+        <span>BOOK NOW</span>
+        </div> <!-- text ends here  -->
+    </div> <!-- banner ends here  -->
+
+    <div class="panel">
+        <div class="left"> <img src="https://lumiere-a.akamaihd.net/v1/images/eu_parks_q2-update_sq_v9_r_3df4fdde.jpeg?region=0,0,1200,1200&width=960" alt="">
+
+            <div class="cont"><span>Walt Disney World</span> <h4>BOOK NOW</h4></div>
+        
+        
+        </div> <!-- left ends here  -->
+        <div class="right"> 
+            <div class="upper"> <img src="https://lumiere-a.akamaihd.net/v1/images/in_parks_hong-kong_wi_r_d781162d.jpeg?region=0,0,1000,500&width=960" alt="">
+            <div><h3>Hong  Kong</h3> <h3>DisneyLand Resort</h3> <h3>Book Now</h3></div>
+
+            </div>
+            <div class="lower"> <img src="https://lumiere-a.akamaihd.net/v1/images/in_parks_shanghai_wi_v2_r_4a94cdf8.jpeg?region=0,0,1000,500&width=960" alt="">
+            
+           <div class="div"> 
+            <div><h3>Hong  Kong</h3> <h3>DisneyLand Resort</h3> <h3>Book Now</h3></div>
+
+
+           </div>
+                
+            
+            </div>
+
+        </div> <!-- right ends here  -->
+    </div><!-- panel ends here  -->
+    
+    <section>
+        <div class="container">
+            <div class= "div"><h2>More Disney Magic</h2></div>
+            <div class="moreMain">
+            <div class="moreLeft">
+                <div class="image1"> <img src="https://lumiere-a.akamaihd.net/v1/images/in_parks_tokyo_po_r_9426b063.jpeg?region=0,0,500,575&width=480" alt=""> <h3>Tokyo Disney Resort </h3> <span>Two Theme parks,Disney Hotel <br>and lot of fun-everthing you can ask for.</span></div>
+                <div class="image2"> <img src="https://lumiere-a.akamaihd.net/v1/images/eu_dlp_mickey-90_po_r_19f1316b.jpeg?region=0,0,600,690&width=480" alt=""><h3>Tokyo Disney Resort </h3> <span>Two Theme parks,Disney Hotel <br>and lot of fun-everthing you can ask for.</span></div>
+
+            </div><!-- moreleft ends here  -->
+            <div class="moreRight"> <img src="https://lumiere-a.akamaihd.net/v1/images/eu_dcr_always_on_sq_c169_v3_r_c9338115.jpeg?region=0,0,913,514" alt=""><h3>Disney Cruise line</h3> <span>Discover the magic on a Disney cruise . Find out more about 2019 itineraries</span></div><!-- moreright ends here  -->
+        </div>  <!-- moremain ends here  -->
+        </div> <!-- container ends here  -->
+
+    </section>
+    <div class="header">
+        <div class="logo"> <a href="DisneyMain.html"> <img src="https://static-mh.content.disney.io/matterhorn/assets/logos/disney_logo_dark@2x-55d58747777d.png" alt="" > </a> </div> <!-- header ends here  -->
+         
+        <div class="shop">
+            <a href="shop.html">SHOP</a>
+        </div> <!-- shop ends here  -->
+        
+        <div class="shop">
+            <a href="perks.html">PERKS</a>
+        </div> <!-- shop ends here  -->
+       
+        <div class="shop">
+            <a href="">WHATS  NEW</a>
+        </div> <!-- shop ends here  -->
+     
+    </div> <!-- header ends here  -->
+    
+</body>
+</html>
+
+
+
+
+  
+
+
+
